@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="counter">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+  <script src="app.js"></script>
+  <meta charset="UTF-8">
+  <title>Counter</title>
+</head>
+<body ng-controller="counterController">
+  <div class="box">
+      <label for="counter1">Counter 1</label>
+      <div class="value"/> {{ counter.value1 }}</div>
+      <button class="circle-plus" ng-click="addCounter1()" ng-disabled="addCounter1Btn"></button>
+      <button class="circle-minus" ng-click="subCounter1()" ng-disabled="subCounter1Btn"></button>
+  </div>
+  <div class="box">
+      <label for="counter2">Counter 2</label>
+      <div class="value"/>{{ counter.value2 }}</div>
+      <button class="circle-plus" ng-click="addCounter2()" ng-disabled="addCounter2Btn"></button>
+      <button class="circle-minus" ng-click="subCounter2()" ng-disabled="subCounter2Btn"></button>
+  </div>
+
+</body>
+</html>
